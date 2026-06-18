@@ -7,20 +7,42 @@
     <body>
         <div class="location">
             <div class="image">
-                
             </div>
             <div class="narration">
-
+                <p class="dialog"></p>
+            </div>
+        </div>
+        <div class="directionChoice">
+            <!-- Keep these all visible, but disable any that are not currently available. Maybe or maybe not mess with dialog options -->
+            <p id="directions">Your exits are...</p>
+            <div class="movementButtons">
+                <button id="west">West</button>
+                <button id="north">North</button>
+                <button id="south">South</button>
+                <button id="east">East</button>
+                <button id="specialSingle" disabled></button>
+                <button id="specialTwoA" class="specialTwo" disabled></button>
+                <button id="specialTwoB" class="specialTwo" disabled></button>
+                <button id="specialThreeA" class="specialThree" disabled></button>
+                <button id="specialThreeB" class="specialThree" disabled></button>
+                <button id="specialThreeC" class="specialThree" diabled></button>
+                <!-- Special is for: up, down, out, etc. Use Two or Three when out & up & down, etc.-->
+                
             </div>
         </div>
         <div class="binary-choice">
-
+            <!-- Not Sure if it will be used here, but I have it in case -->
+            <button id="optA"></button>
+            <button id="optB"></button>
         </div>
         <div class="list-choice">
-
+            <ul class="choices">
+                <!-- Use javascript to add list items depending on situation. -->
+            </ul>
         </div>
         <div class="input-text">
-
+            <input>
+            <!-- Figure out how to do text input here -->
         </div>
     </body>
 </html>
