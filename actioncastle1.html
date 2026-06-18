@@ -3,10 +3,17 @@
     <head>
         <title>Action Castle 1</title>
         <link rel="stylesheet" href="style.css">
+        <script defer src="actioncastle1.js"></script>
+        <style type="text">
+            #textImage {
+                font-size: 100px;
+            }
+        </style>
     </head>
     <body>
         <div class="location">
             <div class="image">
+                <p style="width: 100vw" id="textImage"></p>
             </div>
             <div class="narration">
                 <p class="dialog"></p>
@@ -41,7 +48,7 @@
             </ul>
         </div>
         <div class="input-text">
-            <input>
+            <input type="text" id="textInput" name="textInputHere" maxlength="13" minlength="2" autocomplete="off" value="Name here">
             <!-- Figure out how to do text input here -->
         </div>
     </body>
