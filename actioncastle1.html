@@ -4,52 +4,55 @@
         <title>Action Castle 1</title>
         <link rel="stylesheet" href="style.css">
         <script defer src="actioncastle1.js"></script>
-        <style type="text">
-            #textImage {
-                font-size: 100px;
-            }
-        </style>
     </head>
     <body>
+        <div class="navbar">
+            <button id="homeButton">Home</button>
+            <button id="adjustPage" style="display:none">Adjust Page Layout</button>
+        </div>
+        <img id="textImage" src="assets/images/cabin.png"></img>
         <div class="location">
-            <div class="image">
-                <p style="width: 100vw" id="textImage"></p>
-            </div>
             <div class="narration">
-                <p class="dialog"></p>
+                <p id="dialog"></p>
+                <button id="dcontinue" disabled>Continue</button>
+                <!-- <p id="directions">Your exits are...</p> -->
             </div>
         </div>
-        <div class="directionChoice">
-            <!-- Keep these all visible, but disable any that are not currently available. Maybe or maybe not mess with dialog options -->
-            <p id="directions">Your exits are...</p>
-            <div class="movementButtons">
-                <button id="west">West</button>
-                <button id="north">North</button>
-                <button id="south">South</button>
-                <button id="east">East</button>
-                <button id="specialSingle" disabled></button>
-                <button id="specialTwoA" class="specialTwo" disabled></button>
-                <button id="specialTwoB" class="specialTwo" disabled></button>
-                <button id="specialThreeA" class="specialThree" disabled></button>
-                <button id="specialThreeB" class="specialThree" disabled></button>
-                <button id="specialThreeC" class="specialThree" diabled></button>
-                <!-- Special is for: up, down, out, etc. Use Two or Three when out & up & down, etc.-->
-                
+        <div class="interaction">
+            <div class="directionChoice">
+                <!-- Keep these all visible, but disable any that are not currently available. Maybe or maybe not mess with dialog options -->
+                <p id="directions">You can EXIT, EXAMINE, INVENTORY</p>
+                <div class="movementButtons">
+                    <p>EXIT</p>
+                    <button id="west" class="compass">West</button>
+                    <button id="north" class="compass">North</button>
+                    <button id="south" class="compass">South</button>
+                    <button id="east" class="compass">East</button>
+                    <button id="specialSingle" disabled></button>
+                    <button id="specialTwoA" class="specialTwo" disabled></button>
+                    <button id="specialTwoB" class="specialTwo" disabled></button>
+                    <button id="specialThreeA" class="specialThree" disabled></button>
+                    <button id="specialThreeB" class="specialThree" disabled></button>
+                    <button id="specialThreeC" class="specialThree" diabled></button>
+                    <!-- Special is for: up, down, out, etc. Use Two or Three when out & up & down, etc.-->
+                    
+                </div>
             </div>
-        </div>
-        <div class="binary-choice">
-            <!-- Not Sure if it will be used here, but I have it in case -->
-            <button id="optA"></button>
-            <button id="optB"></button>
-        </div>
-        <div class="list-choice">
-            <ul class="choices">
-                <!-- Use javascript to add list items depending on situation. -->
-            </ul>
-        </div>
-        <div class="input-text">
-            <input type="text" id="textInput" name="textInputHere" maxlength="13" minlength="2" autocomplete="off" value="Name here">
-            <!-- Figure out how to do text input here -->
+            <div class="binary-choice">
+                <!-- Not Sure if it will be used here, but I have it in case -->
+                <p>OPTIONS</p>
+                <button id="optA"></button>
+                <button id="optB"></button>
+            </div>
+            <div class="list-choice">
+                <ul class="choices">
+                    <!-- Use javascript to add list items depending on situation. -->
+                </ul>
+            </div>
+            <div class="input-text">
+                <input type="text" id="textInput" name="textInputHere" maxlength="13" minlength="2" autocomplete="off" value="Name here">
+                <!-- Figure out how to do text input here -->
+            </div>
         </div>
     </body>
 </html>

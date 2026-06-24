@@ -1,3 +1,83 @@
+body {
+    margin:0px;
+    padding:0px;
+}
+
+.navbar {
+    margin:0px;
+    padding:0px;
+    height: inherit;
+    background: black;
+    color:white;
+    button {
+        height:5vw;
+        background:black;
+        color: white;
+        border: 0px;
+    }
+    button:hover {
+        background: rgb(83, 83, 83);
+    }
+    button:disabled {
+        background:rgb(83,83,83);
+        color:black;
+    }
+}
+
+div :not(.text-image, .navbar, button, p, input) {
+    margin: 2vw;
+}
+
+/* Top Half */
+.location {
+    margin:0px 0px;
+    padding:0px 0px;
+    background:lightgrey;
+    /*.narration {
+        #dialog {
+
+        }
+
+        #narration {
+
+        }
+    } */
+}
+
+
 #textImage {
-    font-size: 1vw;
+    background:yellowgreen;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    height:calc(100vh - 5vw);
+    max-width:60vw;
+    object-fit: cover;
+}
+
+.interaction {
+    background:white;
+    /* Directional Choice */
+    .directionChoice {
+        .specialThree {
+            display: none;
+        }
+        
+        .specialTwo {
+            display:none;
+        }
+        
+        
+    }
+    .binary-choice {
+        display:none;
+        padding: 2vw;
+        left: 4vw;
+        position: relative;
+    }
+    .list-choice {
+        display: none;
+    }
+    .input-text {
+        display: none;
+    }
 }
