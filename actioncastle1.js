@@ -1,7 +1,9 @@
 //#region Variable Definition
     //#region Game Mechanics
         let where = "cottage";
+        let saving = "";
         let inventory = ["lamp"];
+        let leftinv = [];
     //#endregion
 
     //#region Element Definition
@@ -67,7 +69,6 @@
         function AdjustImage() {
             let navbarheight = document.querySelector(".navbar").clientHeight;
             let imgwidth = textImage.width;
-            console.log("imgwidth: " + imgwidth);
             // Image location
             textImage.style.position="absolute";
             textImage.style.top = navbarheight+"px";
@@ -126,6 +127,17 @@
             });
             binaryc.style.display = "inline";
             dcontinue.disabled = "disabled";
+        }
+
+        function Remove(item, list) {
+            let index = list.indexOf(item);
+
+            if (index !== -1) {
+                list.splice(index, 1);
+            }
+            
+            console.log(`Updated Array: ${list}`);
+            return list;
         }
     //#endregion
 
@@ -201,21 +213,90 @@
     function FindFishingPole() {
         getDialog("findFishingPole");
         textImage.src = "assets/images/fishing-pole.png";
-        inventory.push("Fishing pole");
+        inventory.push("fishing pole");
         DisableAll();
     }
+    
     function NothingHere() {
         getDialog("nothingHere");
         textImage.src = "assets/images/nothing.png";
         textImage.style.background = "black";
         DisableAll();
-}
+    }
+
+    function RunInventory() {
+        console.log("RUN INVENTORY:");
+        if (leftinv.includes("lamp")) {
+            getDialog("lampDesc");
+            textImage.src = "assets/images/lamp.png";
+            leftinv = Remove("lamp", leftinv);
+            console.log("   LAMP");
+        } else if (leftinv.includes("fishing pole")) {
+            getDialog("fishingPoleDesc");
+            textImage.src = "assets/images/fishing-pole.png";
+            leftinv = Remove("fishing pole", leftinv);
+            console.log("   FISHING POLE");
+        } else if (leftinv.includes("rose")) {
+            getDialog("roseDesc");
+            textImage.src = "assets/images/rose.png";
+            leftinv = Remove("rose", leftinv);
+            console.log("   ROSE");
+        } else if (leftinv.includes("branch")) {
+            getDialog("branchDesc");
+            textImage.src = "assets/images/branch.png";
+            leftinv = Remove("branch", leftinv);
+            console.log("   BRANCH");
+        } else if (leftinv.includes("fish")) {
+            getDialog("fishDesc");
+            textImage.src = "assets/images/fish.png";
+            leftinv = Remove("fish", leftinv);
+            console.log("   FISH");
+        } else if (leftinv.includes("key")) {
+            getDialog("keyDesc");
+            textImage.src = "assets/images/take-key.png";
+            leftinv = Remove("key", leftinv);
+            console.log("   KEY");
+        } else if (leftinv.includes("strange cangle")) {
+            getDialog("strangeCandleDesc");
+            textImage.src = "assets/images/strange-cangle.png";
+            leftinv = Remove("strange candle", leftinv);
+            console.log("   STRANGE CANDLE");
+        } else if (leftinv.includes("lit lamp")) {
+            getDialog("litLampDesc");
+            textImage.src = "assets/images/light-lamp.png";
+            leftinv = Remove("lit lamp", leftinv);
+            console.log("   LIT LAMP");
+        } else if (leftinv.includes("lit strange candle")) {
+            getDialog("litStrangeCandleDesc");
+            textImage.src = "assets/images/light-strange-candle.png";
+            leftinv = Remove("lit strange candle", leftinv);
+            console.log("   LIT STRANGE CANDLE");
+        }  else if (leftinv.includes("crown")) {
+            getDialog("crownDesc");
+            textImage.src = "assets/images/crown.png";
+            leftinv = Remove("crown", leftinv);
+            console.log("   CROWN");
+        }
+        if (leftinv.length === 0) {
+            where = saving;
+            saving = "";
+            leftinv = [];
+        }
+        DisableAll();
+    }
 //#endregion
 
 //#region Button Events
     dcontinue.addEventListener("click", function() {
+        console.log("continuation");
         if (where === "cottage") {
             Cottage();
+        } else if (where === "inventory") {
+            console.log("in the right area");
+            RunInventory();
+            console.log("Afterfunction");
+        } else if (where === "gardenPath") {
+            GardenPath();
         }
     });
 
@@ -229,12 +310,24 @@
 
     binaryA.addEventListener("click", function() {
         if (where === "cottage") {
-            if (inventory.includes("Fishing pole")) {
+            if (inventory.includes("fishing pole")) {
                 NothingHere();
             } else {
                 FindFishingPole();
             }
         }
+    });
+
+    binaryB.addEventListener("click", function() {
+        saving = where;
+        where = "inventory";
+        console.log("Just before:")
+        leftinv = [...inventory];
+        console.log(leftinv);
+        console.log(inventory);
+        console.log(leftinv.length);
+        console.log("endreciept");
+        RunInventory();
     });
 
 //#endregion
