@@ -210,13 +210,22 @@
 //#endregion
 
 //#region Reactions
+    //#region Find Item
+    function FindRose() {
+        getDialog("findRose");
+        textImage.src = "assets/images/rose.png";
+        inventory.push("rose");
+        DisableAll();
+    }
+
     function FindFishingPole() {
         getDialog("findFishingPole");
         textImage.src = "assets/images/fishing-pole.png";
         inventory.push("fishing pole");
         DisableAll();
     }
-    
+    //#endregion
+
     function NothingHere() {
         getDialog("nothingHere");
         textImage.src = "assets/images/nothing.png";
