@@ -118,12 +118,13 @@
                 button.style.display = "inline";
             });
             listc.style.display = "none";
-            specialTwo.forEach(function(button) {
+            specialTwoClass.forEach(function(button) {
                 button.style.display = "none";
             });
-            specialThree.forEach(function(button) {
+            specialThreeClass.forEach(function(button) {
                 button.style.display = "none";
             });
+            binaryc.style.display = "inline";
             dcontinue.disabled = "disabled";
         }
     //#endregion
