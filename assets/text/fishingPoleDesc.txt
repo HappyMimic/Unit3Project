@@ -1,0 +1,5 @@
+<span id="kermit">&lt;&nbsp;FISHING POLE&nbsp;&gt;</span>
+<br>
+An old, relatively sturdy fishing pole. 
+<br>
+It works, and it's yours.

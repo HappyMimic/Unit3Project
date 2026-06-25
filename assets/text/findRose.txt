@@ -1,0 +1,5 @@
+You look in the rosebush to find a single lovely rose.
+<br>
+You pluck it from the bush.
+<br>
+<span id="kermit">&lt;&nbsp;You now have a ROSE.&nbsp;&gt;</span>

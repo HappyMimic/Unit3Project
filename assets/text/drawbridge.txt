@@ -1,0 +1,5 @@
+You come to a drawbridge.
+<br>
+In the distance you can see ACTION CASTLE! (castle castle castle).
+<br>
+<span id='kermit'>&lt;&nbsp;Exits are WEST and EAST.&nbsp;&gt;</span>

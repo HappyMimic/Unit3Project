@@ -1,0 +1,3 @@
+Looking around the top of the towering tree, you find a stout dead branch!
+<br>
+<span id="kermit">&lt;&nbsp;You now have a DEAD BRANCH.&nbsp;&gt;</span>

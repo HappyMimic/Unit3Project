@@ -1,0 +1,11 @@
+You have climbed the towering tree.
+<br>
+It took a
+<br>
+very,
+<br>
+very,
+<br>
+long time.
+<br>
+<span id="kermit">&lt;&nbsp;Exits are DOWN.&nbsp;&gt;</span>

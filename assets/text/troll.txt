@@ -1,0 +1,5 @@
+There is a large, angry troll blocking the drawbridge and the entrance to ACTION CASTLE (castle castle castle).
+<br>
+You cannot pass it.
+<br>
+<span id="kermit">&lt;&nbsp;Exits are WEST.&nbsp;&gt;</span>

@@ -1,3 +1,5 @@
-You find yourself on a lush garden path. There is a rosebush here.
+You find yourself on a lush garden path. 
 <br>
-Exits are IN, NORTH, and SOUTH.
+There is a rosebush here.
+<br>
+<span id="kermit">&lt;&nbsp;Exits are NORTH, SOUTH, and IN.&nbsp;&gt;</span>

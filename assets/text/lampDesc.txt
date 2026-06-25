@@ -1,0 +1,5 @@
+<span id="kermit">&lt;&nbsp;LAMP&nbsp;&gt;</span>
+<br>
+A lamp with fuel already in it.
+<br>
+How fortunate!

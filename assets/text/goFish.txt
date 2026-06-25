@@ -1,0 +1,5 @@
+You sit at the edge of a dock for a long while.
+<br>
+Eventually, you catch a small fish!
+<br>
+<span id="kermit">&lt;&nbsp;You now have a SMALL FISH.&nbsp;&gt;</span>

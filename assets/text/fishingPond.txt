@@ -1,0 +1,5 @@
+You are at the edge of a small fishing pond.
+<br>
+There is a small dock.
+<br>
+<span id="kermit">&lt;&nbsp;Exits are NORTH.&nbsp;&gt;</span>

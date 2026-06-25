@@ -44,13 +44,31 @@ div :not(.text-image, .navbar, button, p, input) {
     } */
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#kermit {
+    padding:auto 0px auto 0px;
+    margin:auto 0px auto 0px;
+    color: green;
+}
+
+div:not(.navbar){
+    button:not(:disabled) {
+        background:rgb(230, 255, 230);
+    }
+}
+
 
 #textImage {
     background:yellowgreen;
     padding: 0px 0px;
     margin: 0px 0px;
     height:calc(100vh - 5vw);
-    max-width:60vw;
+    max-width:55vw;
+    min-width:45vw;
     object-fit: cover;
 }
 
@@ -78,6 +96,12 @@ div :not(.text-image, .navbar, button, p, input) {
         display: none;
     }
     .input-text {
-        display: none;
+        display: block;
+        padding: 0px  2vw;
+        position: relative;
     }
+}
+
+input:not(:disabled) {
+    background:rgb(230, 255, 230);
 }

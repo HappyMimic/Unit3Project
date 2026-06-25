@@ -1,0 +1,6 @@
+You come to a bend in the road.
+<br>
+There is a tall tree here.
+<br>
+<span id="kermit">&lt;&nbsp;Exits are SOUTH, EAST, and TREE.&nbsp;&gt;</span>
+<br>

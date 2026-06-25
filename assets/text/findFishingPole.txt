@@ -1,1 +1,6 @@
-You found a fishing pole! While old, it is sturdy and should serve you well.
+You found a fishing pole! 
+<br>
+While old, it is sturdy and should serve you well.
+<br>
+<span id="kermit">&lt;&nbsp;You now have a FISHING POLE.&nbsp;&gt;</span>
+<br>

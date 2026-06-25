@@ -1,0 +1,13 @@
+.main {
+    background-image: url("assets/images/parsley1.png");
+    background-repeat: no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size:contain;
+    background-color:white;
+    background-attachment:fixed;
+}
+
+.navbar {
+    /* display: none; */
+}
